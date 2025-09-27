@@ -88,3 +88,5 @@
 	name = "Terrorbog Above"
 	ambientsounds = AMB_MOUNTAIN
 	ambientnight = AMB_MOUNTAIN
+	soundenv = 17
+	first_time_text = null
