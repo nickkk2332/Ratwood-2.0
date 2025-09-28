@@ -11,7 +11,6 @@
 	droning_sound = 'sound/music/area/bog.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	warden_area = TRUE
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_mobs = list(
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 30,
