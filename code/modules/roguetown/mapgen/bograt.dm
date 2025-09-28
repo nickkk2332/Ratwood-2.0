@@ -53,7 +53,7 @@
 
 /datum/mapGeneratorModule/bogratgrass
 	clusterCheckFlags =  CLUSTER_CHECK_SAME_ATOMS
-	allowed_turfs = list(/turf/open/floor/rogue/grass, /turf/open/floor/rogue/grassred, /turf/open/floor/rogue/grassyel, /turf/open/floor/rogue/grasscold)
+	allowed_turfs = list(/turf/open/floor/rogue/grass, /turf/open/floor/rogue/grassred, /turf/open/floor/rogue/grassyel, /turf/open/floor/rogue/grasscold, /turf/open/floor/rogue/grassgrey)
 	excluded_turfs = list()
 	allowed_areas = list(/area/rogue/outdoors/bograt)
 	spawnableAtoms = list(/obj/structure/glowshroom = 3,
