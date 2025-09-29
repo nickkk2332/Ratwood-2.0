@@ -65,8 +65,10 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 	cloak = /obj/item/clothing/cloak/half/orange
 	backl = /obj/item/storage/backpack/rogue/satchel
-	beltl = /obj/item/rogueweapon/sword/rapier
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+	backr = /obj/item/rogueweapon/sword/rapier
+	beltl = /obj/item/rogueweapon/scabbard/sword
+	beltr = /obj/item/rogueweapon/scabbard/sheath
+	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 	var/instrumentroll = rand(1, 100)	//GAMBLING !!!
 	switch(instrumentroll)
 		if(1 to 20)
