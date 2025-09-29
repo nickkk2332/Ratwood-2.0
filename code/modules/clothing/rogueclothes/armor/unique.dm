@@ -131,7 +131,74 @@
 	blocksound = CHAINHIT
 	do_sound_chain = TRUE
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
-	max_integrity = 300
+	max_integrity = 325	//Oh Lord 25 More Integrity Egads !
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM	//a bit heavier therefore!
+
+/obj/item/clothing/suit/roguetown/armor/leather/chargah
+	name = "Chargah"
+	desc = "A robe made from padded cloth."
+	icon_state = "chargah"
+	item_state = "chargah"
+	armor = ARMOR_PADDED
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|VITALS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	armor_class = ARMOR_CLASS_LIGHT
+	salvage_result = /obj/item/natural/hide/cured
+
+/obj/item/clothing/suit/roguetown/armor/leather/hatanga_degel
+	name = "Hatanga Degel"
+	desc = "A soft padded armor made from leathers."
+	icon_state = "hatanga"
+	item_state = "hatanga"
+	armor = ARMOR_LEATHER
+	prevent_crits = list(BCLASS_CUT,BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|VITALS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	armor_class = ARMOR_CLASS_LIGHT
+	salvage_result = /obj/item/natural/hide/cured
+
+/obj/item/clothing/suit/roguetown/armor/leather/hatanga_degel_fur
+	name = "Hatanga Degel Fur"
+	desc = "A soft padded armor made from leathers and fur."
+	icon_state = "hatangafur"
+	item_state = "hatangafur"
+	armor = ARMOR_PADDED_GOOD
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_STAB)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS|VITALS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	armor_class = ARMOR_CLASS_LIGHT
+	salvage_result = /obj/item/natural/hide/cured
+
+/obj/item/clothing/suit/roguetown/armor/leather/Huus_quyaq
+	name = "Huus quyaq"
+	desc = "Armor made of leather plates."
+	icon_state = "huus"
+	item_state = "huus"
+	armor = ARMOR_LEATHER_GOO
+	prevent_crits = list(BCLASS_CUT,BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN|LEGS|VITALS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	armor_class = ARMOR_CLASS_LIGHT
