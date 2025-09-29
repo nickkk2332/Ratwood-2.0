@@ -23,7 +23,7 @@
 /datum/migrant_wave/fablefield_down_two
 	name = "The Fablefield Troupe"
 	shared_wave_type = /datum/migrant_wave/fablefield
-		downgrade_wave = /datum/migrant_wave/fablefield_down_three
+	downgrade_wave = /datum/migrant_wave/fablefield_down_three
 	can_roll = FALSE
 	roles = list(
 		/datum/migrant_role/fablefield/goliard = 1,
