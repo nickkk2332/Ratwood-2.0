@@ -460,3 +460,13 @@
 	armor = list("blunt" = 50, "slash" = 90, "stab" = 60, "piercing" = 30, "fire" = 0, "acid" = 0)
 	armor_class = ARMOR_CLASS_LIGHT
 	sewrepair = TRUE
+
+//Gronn
+/obj/item/clothing/shoes/roguetown/armor/nomadboots
+	name = "nomad boots"
+	desc = "Hardened Leather boots of the steppes."
+	icon_state = "nomadboots"
+	item_state = "nomadboots"
+	max_integrity = 250
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_CHOP)
+	armor = ARMOR_BOOTS
