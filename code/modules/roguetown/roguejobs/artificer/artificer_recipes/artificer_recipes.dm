@@ -94,14 +94,17 @@
 	skill_level = 1
 	i_type = "General"
 
-/datum/artificer_recipe/bronze/locks
+/datum/artificer_recipe/iron
+	i_type = "General"
+
+/datum/artificer_recipe/iron/locks
 	name = "Locks 3x"
 	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/customlock, /obj/item/customlock, /obj/item/customlock)
 	hammers_per_item = 5
 	skill_level = 1
 
-/datum/artificer_recipe/bronze/keys
+/datum/artificer_recipe/iron/keys
 	name = "Keys 3x"
 	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/customblank, /obj/item/customblank, /obj/item/customblank)
@@ -109,14 +112,14 @@
 	skill_level = 1
 
 
-/datum/artificer_recipe/bronze/lockpicks
+/datum/artificer_recipe/iron/lockpicks
 	name = "Lockpick (x3)"
 	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/lockpickring,/obj/item/lockpickring,/obj/item/lockpickring)
 	hammers_per_item = 5
 	skill_level = 2
 
-/datum/artificer_recipe/bronze/lockpickring
+/datum/artificer_recipe/iron/lockpickring
 	name = "Lockpickring (x3)"
 	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/lockpickring,/obj/item/lockpickring,/obj/item/lockpickring)
