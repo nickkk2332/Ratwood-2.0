@@ -102,3 +102,36 @@
 	armor_class = ARMOR_CLASS_LIGHT
 	boobed = TRUE
 	flags_inv = 0
+
+//Gronn
+/obj/item/clothing/suit/roguetown/armor/hudesutu_quyaq
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "Hudesutu quyaq"
+	desc = "Lamellar Armor made of iron and leathers."
+	body_parts_covered = COVERAGE_ALL_BUT_ARMS
+	icon_state = "hudesutu"
+	armor = ARMOR_LEATHER_STUDDED
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
+	blocksound = CHAINHIT
+	do_sound_chain = TRUE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_LIGHT
+
+/obj/item/clothing/suit/roguetown/armor/kurche
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "Kurche"
+	desc = "Pieces of Iron Plates and Leathers that protect the vitals."
+	body_parts_covered = COVERAGE_ALL_BUT_LEGS
+	icon_state = "kurche"
+	armor = ARMOR_CUIRASS	//Essentially really good stab/slash prot, some prot against projectiles too
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
+	blocksound = CHAINHIT
+	do_sound_chain = TRUE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	max_integrity = 300
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM	//a bit heavier therefore!
