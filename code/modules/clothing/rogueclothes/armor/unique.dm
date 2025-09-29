@@ -125,7 +125,7 @@
 	desc = "Armor made of leather plates."
 	icon_state = "huus"
 	item_state = "huus"
-	armor = ARMOR_LEATHER_GOO
+	armor = ARMOR_LEATHER_GOOD
 	prevent_crits = list(BCLASS_CUT,BCLASS_BLUNT)
 	blocksound = SOFTHIT
 	slot_flags = ITEM_SLOT_ARMOR
