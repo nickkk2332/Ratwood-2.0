@@ -12,7 +12,7 @@
 	outfit_female = null
 	display_order = JDO_WRETCH
 	show_in_credits = FALSE
-	min_pq = 30
+	min_pq = 60//Three slots. Intended for round progression. Lunatic at 100, Martyr at 10.
 	max_pq = null
 
 	obsfuscated_job = TRUE
