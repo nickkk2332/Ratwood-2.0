@@ -33,7 +33,7 @@
 							/obj/structure/flora/roguetree/stump = 4,
 							/obj/structure/glowshroom = 2,
 							/obj/structure/closet/dirthole/closed/loot = 3,
-							/obj/structure/flora/roguegrass/swampweed = 8,
+							/obj/structure/flora/roguegrass/swampweed = 6,
 							/obj/structure/flora/roguegrass/pyroclasticflowers = 2,
 							/obj/structure/flora/roguegrass/bush/westleach = 5,
 							/obj/structure/flora/roguegrass/herb/random = 10,
@@ -41,7 +41,7 @@
 							/obj/effect/decal/remains/bear = 1,
 							/obj/effect/decal/remains/human = 1,
 							/obj/structure/zizo_bane = 3,
-							/obj/structure/flora/roguegrass/maneater/real = 3)
+							/obj/structure/flora/roguegrass/maneater/real = 2)
 	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=2,
 						/turf/open/water/swamp=1)
 	allowed_areas = list(/area/rogue/outdoors/bograt)
@@ -61,8 +61,8 @@
 							/obj/structure/flora/roguetree/wise=1,
 							/obj/structure/flora/roguegrass/bush = 20,
 							/obj/structure/flora/roguegrass = 180,
-							/obj/structure/flora/roguegrass/maneater = 30,
-							/obj/structure/flora/roguegrass/maneater/real = 10,
+							/obj/structure/flora/roguegrass/maneater = 15,
+							/obj/structure/flora/roguegrass/maneater/real = 5,
 							/obj/item/natural/stone = 12,
 							/obj/item/natural/rock = 5,
 							/obj/item/grown/log/tree/stick = 6,

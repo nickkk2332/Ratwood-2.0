@@ -25,9 +25,7 @@
 				new /datum/ambush_config/bog_guard_deserters = 15,
 				new /datum/ambush_config/bog_guard_deserters/hard = 2,
 				new /datum/ambush_config/mirespiders_ambush = 30,
-				new /datum/ambush_config/mirespiders_crawlers = 15,
-				new /datum/ambush_config/mirespiders_aragn = 5,
-				new /datum/ambush_config/mirespiders_unfair = 1)
+				new /datum/ambush_config/mirespiders_crawlers = 15)
 	first_time_text = "THE TERRORBOG"
 	converted_type = /area/rogue/indoors/shelter/bograt
 	deathsight_message = "a wretched, fetid bog"
@@ -82,6 +80,7 @@
 /area/rogue/outdoors/bograt/safe
 	name = "Terrorbog Pass"
 	ambush_times = null
+	ambush_mobs = null
 
 /area/rogue/outdoors/bograt/above
 	name = "Terrorbog Above"
