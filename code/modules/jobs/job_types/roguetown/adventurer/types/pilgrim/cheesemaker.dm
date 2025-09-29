@@ -34,8 +34,15 @@
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	mouth = /obj/item/rogueweapon/huntingknife
 	belt = /obj/item/storage/belt/rogue/leather
-	pants = /obj/item/clothing/under/roguetown/tights/random
-	shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
+	if(should_wear_femme_clothes(H))
+		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
+		pants = /obj/item/clothing/under/roguetown/skirt/random
+	else if(should_wear_masc_clothes(H))
+		armor = /obj/item/clothing/suit/roguetown/armor/workervest
+		pants = /obj/item/clothing/under/roguetown/tights/random
+		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
+	head = /obj/item/clothing/head/roguetown/cookhat
 	cloak = /obj/item/clothing/cloak/apron
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	backl = /obj/item/storage/backpack/rogue/backpack
