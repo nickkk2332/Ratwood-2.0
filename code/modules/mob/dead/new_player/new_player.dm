@@ -426,6 +426,11 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	if(job.plevel_req > client.patreonlevel())
 		testing("PATREONLEVEL [client.patreonlevel()] req [job.plevel_req]")
 		return JOB_UNAVAILABLE_GENERIC
+	if(!job.required || latejoin)
+		if(!isnull(job.min_pq) && (get_playerquality(ckey) < job.min_pq))
+			return JOB_UNAVAILABLE_GENERIC
+		if(!isnull(job.max_pq) && (get_playerquality(ckey) > job.max_pq))
+			return JOB_UNAVAILABLE_GENERIC
 	var/datum/species/pref_species = client.prefs.pref_species
 	if(length(job.allowed_races) && !(pref_species.type in job.allowed_races))
 		return JOB_UNAVAILABLE_RACE
@@ -550,6 +555,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			give_madness(humanc, GLOB.curse_of_madness_triggered)
 */
 	GLOB.joined_player_list += character.ckey
+	update_wretch_slots()
 /*
 	if(CONFIG_GET(flag/allow_latejoin_antagonists) && humanc)	//Borgs aren't allowed to be antags. Will need to be tweaked if we get true latejoin ais.
 		if(SSshuttle.emergency)

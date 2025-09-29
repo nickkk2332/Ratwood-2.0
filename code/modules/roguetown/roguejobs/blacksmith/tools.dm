@@ -81,7 +81,7 @@
 			return
 
 		if(blacksmith.get_skill_level(attacked_item.anvilrepair) <= 0)
-			if(HAS_TRAIT(user, TRAIT_SQUIRE_REPAIR))
+			if(HAS_TRAIT(user, TRAIT_SQUIRE_REPAIR) || HAS_TRAIT(user, TRAIT_DWARF_REPAIR))
 				if(locate(/obj/machinery/anvil) in attacked_object.loc)
 					repair_percent = 0.035
 				//Squires can repair on tables, but less efficiently
@@ -187,6 +187,7 @@
 	desc = "A wooden mallet is an artificers second best friend! But it may also come in handy to a smith..."
 	icon_state = "hammer_w"
 	force = 16
+	metalizer_result = /obj/item/rogueweapon/hammer
 
 /obj/item/rogueweapon/hammer/stone	// stone hammer
 	name = "stone hammer"
