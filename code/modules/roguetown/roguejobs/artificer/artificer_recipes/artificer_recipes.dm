@@ -629,7 +629,7 @@
 	skill_level = 4
 
 /datum/artificer_recipe/general/impactfiresmoke
-	name = "Conflagaration Smoke Grenade"
+	name = "Conflagration Smoke Grenade"
 	required_item = /obj/item/ingot/copper
 	additional_items = list(/obj/item/paper/scroll,
 							/obj/item/alch/coaldust,
