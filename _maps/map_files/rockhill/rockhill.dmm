@@ -3801,6 +3801,10 @@
 /obj/structure/table/wood,
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/manor/rockhill)
+"bre" = (
+/obj/structure/fluff/statue/knight,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/town/rockhill)
 "bru" = (
 /obj/structure/telescope,
 /turf/open/floor/rogue/hexstone,
@@ -9597,6 +9601,12 @@
 /obj/structure/flora/ausbushes/brflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors/town/church)
+"dlZ" = (
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town)
 "dma" = (
 /turf/open/lava,
 /area/rogue/under/cave)
@@ -10021,6 +10031,10 @@
 /obj/structure/fluff/railing/border{
 	dir = 10
 	},
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/obj/item/natural/rock,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town)
 "dum" = (
@@ -10901,6 +10915,10 @@
 /obj/machinery/light/rogue/torchholder{
 	pixel_x = -1;
 	pixel_y = 30
+	},
+/obj/structure/fluff/customsign{
+	name = "WEST TO: ROCKHILL ORPHANAGE AND BOARDING SCHOOL";
+	icon_state = "signwrote"
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town/rockhill)
@@ -14082,7 +14100,8 @@
 	desc = "Follow the road";
 	name = "Whitevein - Down Below!";
 	pixel_x = 7;
-	pixel_y = 10
+	pixel_y = 10;
+	icon_state = "signwrote"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/rockhill)
@@ -35562,6 +35581,11 @@
 /obj/effect/landmark/quest_spawner/hard,
 /turf/open/water/swamp,
 /area/rogue/under/underdark)
+"mjy" = (
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town)
 "mjz" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/wood,
@@ -45847,6 +45871,13 @@
 "pRY" = (
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/woodsrat/south)
+"pSd" = (
+/obj/structure/fluff/customsign{
+	name = "WELCOME TO ROCKHILL";
+	icon_state = "signwrote"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/town/rockhill)
 "pSg" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/tile/bath{
@@ -58147,6 +58178,13 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/town/basement)
+"urI" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/indoors/town)
 "urX" = (
 /obj/structure/fluff/railing/border{
 	dir = 5;
@@ -341944,19 +341982,19 @@ wbg
 wbg
 wbg
 wbg
+wVI
+wVI
+fhh
+wVI
+wVI
 wbg
 wbg
+wVI
+wVI
 wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
-wbg
+wVI
+wVI
+gmG
 wbg
 wbg
 wbg
@@ -342377,18 +342415,18 @@ pTG
 wbg
 wbg
 wbg
-wbg
-wbg
-pTG
-wbg
-wbg
-wbg
-wbg
+wVI
+rfx
+wVI
 wbg
 pTG
 wbg
 wbg
 wbg
+pTG
+wbg
+wbg
+rfx
 wbg
 wVI
 wbg
@@ -342812,13 +342850,13 @@ rfx
 rfx
 rfx
 rfx
+aOn
 rfx
+aOn
 rfx
+aOn
 rfx
-rfx
-rfx
-rfx
-rfx
+aOn
 rfx
 rfx
 wbg
@@ -343249,7 +343287,7 @@ pco
 mwE
 mwE
 jZo
-aOn
+bre
 mwE
 viS
 rfx
@@ -344543,8 +344581,8 @@ bVb
 ede
 jZo
 aOn
-aOn
-aOn
+mwE
+mwE
 aOn
 mwE
 axJ
@@ -346286,7 +346324,7 @@ xAt
 xAt
 rfx
 eMi
-aOv
+pSd
 aOv
 aOv
 krw
@@ -465996,8 +466034,8 @@ fZJ
 fZJ
 fZJ
 bQs
-ghm
-vra
+urI
+dlZ
 bQs
 bQs
 oBq
@@ -466428,8 +466466,8 @@ fZJ
 fZJ
 fZJ
 guN
-vra
-vra
+dlZ
+mjy
 bQs
 bQs
 kYX
@@ -466860,7 +466898,7 @@ fZJ
 fZJ
 fZJ
 bQs
-vra
+mjy
 vra
 nJs
 aQZ
