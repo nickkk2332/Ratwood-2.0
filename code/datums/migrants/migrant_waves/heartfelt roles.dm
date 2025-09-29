@@ -160,7 +160,7 @@
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	l_hand = /obj/item/rogueweapon/sword/long
 	var/weaponroll = rand(1, 100)	//LETS GO GAMBLING!!
-	switch(ringroll)
+	switch(weaponroll)
 		if(1 to 20)
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 		if(21 to 40)
