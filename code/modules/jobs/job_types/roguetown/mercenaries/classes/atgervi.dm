@@ -4,13 +4,13 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/atgervi
-	traits_applied = list(TRAIT_MEDIUMARMOR)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_SEEPRICES_SHITTY)
 	category_tags = list(CTAG_MERCENARY)
 	subclass_stats = list(
 		STATKEY_WIL = 3,
-		STATKEY_CON = 3,
-		STATKEY_STR = 2,
-		STATKEY_PER = 1,
+		STATKEY_CON = 2,
+		STATKEY_STR = 1,
+		STATKEY_PER = -1,
 		STATKEY_SPD = -1
 	)
 	
@@ -33,7 +33,6 @@
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)	
 
 	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
 	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
@@ -48,15 +47,14 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle //They didn't have neck protection before.
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-
-	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_1)	//Capped to T1 miracles.
+	
 	H.cmode_music = 'sound/music/combat_vagarian.ogg'
 	H.grant_language(/datum/language/gronnic)
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/stoneaxe/hurlbat = 1
 		)
 	H.merctype = 1
 
@@ -90,7 +88,7 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
-	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
+	H.dna.species.soundpack_m = new /datum/voicepack/mal I e/warrior()
 
 	head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	gloves = /obj/item/clothing/gloves/roguetown/plate/atgervi
