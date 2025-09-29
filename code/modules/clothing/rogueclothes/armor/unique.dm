@@ -113,7 +113,6 @@
 	armor = ARMOR_CUIRASS	//Essentially really good stab/slash prot, some prot against projectiles too
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	blocksound = CHAINHIT
-	do_sound_chain = TRUE
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	max_integrity = 325	//Oh Lord 25 More Integrity Egads !
 	anvilrepair = /datum/skill/craft/armorsmithing
