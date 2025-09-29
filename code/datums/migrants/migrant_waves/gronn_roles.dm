@@ -5,7 +5,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
 	show_wanderer_examine = FALSE
-	show_foreign_examine = TRUE
 
 /datum/outfit/job/roguetown/gronn
 	allowed_patrons = list(/datum/patron/inhumen/graggar)
@@ -16,40 +15,38 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
-	gloves =/obj/item/clothing/gloves/roguetown/leather/angle
+	gloves = /obj/item/clothing/gloves/roguetown/leather/angle
 	belt = /obj/item/storage/belt/rogue/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/kurche
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/scabbard/sheath
 	beltr = /obj/item/rogueweapon/stoneaxe/battle
-	r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
-	l_hand = /obj/item/ammo_holder/quiver/arrows
+	r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+	l_hand = /obj/item/quiver/arrows
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/rogueweapon/huntingknife = 1
 		)
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)  // only affects drawtime. They get no PER buff, come on.
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/hunting, 2, TRUE)
-		subclass_stats = list(
-		STATKEY_CON = 3,
-		STATKEY_WIL = 3,
-		STATKEY_STR = 3,
-		STATKEY_INT = -1,
-    	STATKEY_LCK = 1  //Graggar favors your little buttcheeks.
-	)
+		H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)  // only affects drawtime. They get no PER buff, come on.
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/butchering, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+		H.change_stat(STATKEY_CON = 3)
+		H.change_stat(STATKEY_WIL = 3)
+		H.change_stat(STATKEY_STR = 3)
+		H.change_stat(STATKEY_INT = -1)
+    	H.change_stat(STATKEY_LCK = 1)  //Graggar favors your little buttcheeks.
 
   	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
@@ -71,7 +68,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
 	show_wanderer_examine = FALSE
-	show_foreign_examine = TRUE
 
 /datum/outfit/job/roguetown/gronn/shaman/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -84,24 +80,21 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/huntingknife
 	backpack_contents = list(/obj/item/reagent_containers/glass/mortar, /obj/item/pestle, /obj/item/rogueweapon/katar, /obj/item/rogueweapon/scabbard/sheath)
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)  //May be too much, may not be too much. Can be nerfed. Arcyne is gone in favor of something close to the shaman merc
-    subclass_stats = list(
-		STATKEY_CON = 2,
-		STATKEY_WIL = 2,
-		STATKEY_STR = 1,
-    	STATKEY_INT = 2,
-	)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
+    	H.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)  //May be too much, may not be too much. Can be nerfed. Arcyne is gone in favor of something close to the shaman merc
+		H.change_stat(STATKEY_CON = 2)
+		H.change_stat(STATKEY_WIL = 2)
+		H.change_stat(STATKEY_STR = 1)
+		H.change_stat(STATKEY_INT = 2)
 
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
@@ -109,7 +102,6 @@
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/message)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose)
 
@@ -128,7 +120,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
 	show_wanderer_examine = FALSE
-	show_foreign_examine = TRUE
 
 /datum/outfit/job/roguetown/gronn/warrior/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -136,7 +127,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
-	gloves =/obj/item/clothing/gloves/roguetown/leather/angle
+	gloves = /obj/item/clothing/gloves/roguetown/leather/angle
 	belt = /obj/item/storage/belt/rogue/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/steppe
 	backl = /obj/item/storage/backpack/rogue/satchel
@@ -154,26 +145,23 @@
 			r_hand = /obj/item/rogueweapon/halberd/bardiche/paalloy  // Literally just a cooler bardiche.
 		if(61 to 80)
 			r_hand = /obj/item/rogueweapon/greataxe  //50/50 between greataxe or a bardiche.
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
-    subclass_stats = list(
-		STATKEY_CON = 3,
-		STATKEY_WIL = 2,
-		STATKEY_STR = 3,
-    	STATKEY_INT = -2,
-	)
+		H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
+    	H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+		H.change_stat(STATKEY_CON = 3)
+		H.change_stat(STATKEY_WIL = 2)
+		H.change_stat(STATKEY_STR = 3)
+		H.change_stat(STATKEY_INT = -2)
 
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
@@ -195,7 +183,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
 	show_wanderer_examine = FALSE
-	show_foreign_examine = TRUE
 
 /datum/outfit/job/roguetown/gronn/tribal/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -203,37 +190,34 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
-	gloves =/obj/item/clothing/gloves/roguetown/leather
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/Huus_quyaq
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltl = /obj/item/rogueweapon/huntingknife
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut
 	r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
-	l_hand = /obj/item/ammo_holder/quiver/arrows
+	l_hand = /obj/item/quiver/arrows
   	backpack_contents = list(/obj/item/rogueweapon/scabbard/sheath)
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/craft/sewing, 3, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)   //Track That Prey.
-    subclass_stats = list(
-		STATKEY_PER = 3,
-		STATKEY_WIL = 1,
-		STATKEY_STR = 2,
-    	STATKEY_INT = -2,
-    	STATKEY_SPD = 1
-	)
+		H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
+    	H.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
+    	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
+    	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+    	H.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)   //Track That Prey.
+		H.change_stat(STATKEY_PER = 3)
+		H.change_stat(STATKEY_WIL = 1)
+		H.change_stat(STATKEY_STR = 2)
+		H.change_stat(STATKEY_INT = -2)
+		H.change_stat(STATKEY_SPD = 1)
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 
@@ -254,36 +238,32 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	show_wanderer_examine = FALSE
-	show_foreign_examine = TRUE
 
 /datum/outfit/job/roguetown/gronn/slave/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/clothing/neck/roguetown/collar/leather/cursed
+	neck = /obj/item/clothing/neck/roguetown/cursed_collar
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltl = /obj/item/storage/belt/rogue/pouch
 	beltr = /obj/item/flint
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/labor/butchering, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/labor/farming, 3, TRUE)
-    	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE) // can mend the wounded a bit.
-    subclass_stats = list(
-		STATKEY_CON = -2,
-		STATKEY_WIL = 1,
-		STATKEY_STR = -2,
-    	STATKEY_INT = 3,
-    	STATKEY_SPD = 2
-	)
+		H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/labor/butchering, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/labor/farming, 3, TRUE)
+    	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE) // can mend the wounded a bit.
+		H.change_stat(STATKEY_CON = -2)
+		H.change_stat(STATKEY_WIL = 1)
+		H.change_stat(STATKEY_STR = -2)
+		H.change_stat(STATKEY_INT = 3)
+		H.change_stat(STATKEY_SPD = 2)
 
 	H.cmode_music = 'sound/music/combat_gronn.ogg'
 
