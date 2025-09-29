@@ -25,7 +25,7 @@
 	beltr = /obj/item/rogueweapon/stoneaxe/battle
 	r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	l_hand = /obj/item/ammo_holder/quiver/arrows
-  	backpack_contents = list(
+	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/rogueweapon/huntingknife = 1
@@ -43,7 +43,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/hunting, 2, TRUE)
-    subclass_stats = list(
+		subclass_stats = list(
 		STATKEY_CON = 3,
 		STATKEY_WIL = 3,
 		STATKEY_STR = 3,
