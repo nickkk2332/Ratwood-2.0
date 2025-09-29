@@ -877,7 +877,7 @@
 /obj/item/clothing/cloak/apron/waist
 	name = "apron"
 	desc = "An apron used by many workshop workers."
-	color = "#c9c3bd"
+	color = "#c9c3bd" //default spawns are less eye-searingly white
 	icon_state = "waistpron"
 	item_state = "waistpron"
 	body_parts_covered = GROIN
