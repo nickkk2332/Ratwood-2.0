@@ -42,8 +42,9 @@
 							/obj/effect/decal/remains/human = 1,
 							/obj/structure/zizo_bane = 3,
 							/obj/structure/flora/roguegrass/maneater/real = 2)
-	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=2,
-						/turf/open/water/swamp=1)
+	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=5,
+						/turf/open/water/swamp=5,
+						/turf/open/floor/rogue/grass = 20)
 	allowed_areas = list(/area/rogue/outdoors/bograt)
 
 /datum/mapGeneratorModule/bogratroad
@@ -67,6 +68,9 @@
 							/obj/item/natural/rock = 5,
 							/obj/item/grown/log/tree/stick = 6,
 							/obj/structure/flora/roguetree/stump/log = 6)
+	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=5,
+						/turf/open/water/swamp=5,
+						/turf/open/floor/rogue/dirt = 30)
 
 /datum/mapGeneratorModule/bogratwater
 	clusterCheckFlags = CLUSTER_CHECK_SAME_ATOMS
