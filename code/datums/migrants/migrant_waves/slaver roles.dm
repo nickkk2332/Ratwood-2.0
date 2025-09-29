@@ -7,13 +7,13 @@
 
 /datum/outfit/job/roguetown/slaver/master/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/raneshen		// thematic as it is the same helmet jannisaries use. Maybe a retired soldier with hired goons?
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/purple
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/bevor
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	gloves = /obj/item/clothing/gloves/roguetown/angle
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/purple
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord		// an arming jacket won't hurt
 	belt = /obj/item/storage/belt/rogue/leather/shalal/purple
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
 	cloak = /obj/item/clothing/cloak/cape/purple
@@ -70,7 +70,8 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/sword/sabre/shamshir
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/idagger = 1)
+	beltr = /obj/item/rogueweapon/scabbard/sword
+	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	if(H.mind)
 		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
@@ -119,18 +120,19 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	backl = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/rogueweapon/shield/tower
 	beltr = /obj/item/rogueweapon/whip
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/idagger = 1)
+	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	if(H.mind)
 		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)		// for the whip & shield combo
 		H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
@@ -167,13 +169,13 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	belt = /obj/item/storage/belt/rogue/leather/shalal/purple
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light	// light armor for the dodgejak
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltr = /obj/item/quiver/bolts
-	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/combat = 1, /obj/item/needle = 1)
+	backpack_contents = list(/obj/item/rope/chain = 1, /obj/item/rogueweapon/huntingknife/combat = 1, /obj/item/needle = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	if(H.mind)
 		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
@@ -233,13 +235,12 @@
 		H.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)		// would make sense they probably know how to either stitch themselves or their masters - makes them more valuable, too. 
 		H.change_stat("strength", -3)
 		H.change_stat("constitution", -2)
-		H.change_stat("willpower", 2) // they get whipped, they can endure some pain
+		H.change_stat("willpower", 3) // they get whipped, they can endure some pain
 		H.change_stat("intelligence", 3)
-		H.change_stat("speed", 1)
-		H.change_stat("fortune", -1)
+		H.change_stat("speed", 2)	// all they can do is run bruh.
 		H.cmode_music = 'sound/music/combat_zybantine.ogg'
 
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
