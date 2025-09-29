@@ -56,9 +56,9 @@
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
-	if(!H.has_language(/datum/language/orcish))
-		H.grant_language(/datum/language/orcish)
-		to_chat(H, span_info("I can speak Orchish with ,o before my speech."))
+	if(!H.has_language(/datum/language/gronnic))
+		H.grant_language(/datum/language/gronnic)
+		to_chat(H, span_info("I can speak Gronnic with ,n before my speech."))
 
 //Shaman
 /datum/migrant_role/gronn/shaman
@@ -109,9 +109,9 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_3)	//Minor regen, can level up to T3.
 
-	if(!H.has_language(/datum/language/orcish))
-		H.grant_language(/datum/language/orcish)
-		to_chat(H, span_info("I can speak Orchish with ,o before my speech."))
+	if(!H.has_language(/datum/language/gronnic))
+		H.grant_language(/datum/language/gronnic)
+		to_chat(H, span_info("I can speak Gronnic with ,n before my speech."))
 
 //Warrior
 /datum/migrant_role/gronn/warrior
@@ -172,9 +172,9 @@
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
-	if(!H.has_language(/datum/language/orcish))
-		H.grant_language(/datum/language/orcish)
-		to_chat(H, span_info("I can speak Orchish with ,o before my speech."))
+	if(!H.has_language(/datum/language/gronnic))
+		H.grant_language(/datum/language/gronnic)
+		to_chat(H, span_info("I can speak Gronnic with ,n before my speech."))
 
 //Tribal
 /datum/migrant_role/gronn/tribal
@@ -227,9 +227,9 @@
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
-	if(!H.has_language(/datum/language/orcish))
-		H.grant_language(/datum/language/orcish)
-		to_chat(H, span_info("I can speak Orchish with ,o before my speech."))
+	if(!H.has_language(/datum/language/gronnic))
+		H.grant_language(/datum/language/gronnic)
+		to_chat(H, span_info("I can speak Gronnic with ,n before my speech."))
 
 //Slave
 /datum/migrant_role/gronn/slave
@@ -269,6 +269,6 @@
 	H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
-	if(!H.has_language(/datum/language/orcish))
-		H.grant_language(/datum/language/orcish)
-		to_chat(H, span_info("I can speak Orchish with ,o before my speech."))
+	if(!H.has_language(/datum/language/gronnic))
+		H.grant_language(/datum/language/gronnic)
+		to_chat(H, span_info("I can speak Gronnic with ,n before my speech."))
