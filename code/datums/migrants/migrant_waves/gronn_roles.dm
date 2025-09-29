@@ -3,7 +3,7 @@
 	greet_text = "You are the leader of your tribe. Guide them to glory or try to survive."
 	outfit = /datum/outfit/job/roguetown/gronn/chieftain
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
+	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp, /datum/species/tieberian, /datum/species/lizardfolk, /datum/species/lupian, /datum/species/anthromorph, /datum/species/demihuman, /datum/species/dwarf/mountain, /datum/species/dracon, /datum/species/tabaxi) //we'll see how this goes. Carl/Chocobo can shoot this shit down.
 	show_wanderer_examine = FALSE
 
 /datum/outfit/job/roguetown/gronn
@@ -66,7 +66,7 @@
 	greet_text = "The wisest and likely oldest of the tribe. You commune with Graggah and unleash powers of the divine. Tending as well to the wounded of the tribe."
 	outfit = /datum/outfit/job/roguetown/gronn/shaman
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
+	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp, /datum/species/tieberian, /datum/species/lizardfolk, /datum/species/lupian, /datum/species/anthromorph, /datum/species/demihuman, /datum/species/dwarf/mountain, /datum/species/dracon, /datum/species/tabaxi)
 	show_wanderer_examine = FALSE
 
 /datum/outfit/job/roguetown/gronn/shaman/pre_equip(mob/living/carbon/human/H)
@@ -119,7 +119,7 @@
 	greet_text = "You are the elite, the best fighters of your tribe. You fight side by side with the Chieftain and ensure his survival."
 	outfit = /datum/outfit/job/roguetown/gronn/warrior
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
+	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp, /datum/species/tieberian, /datum/species/lizardfolk, /datum/species/lupian, /datum/species/anthromorph, /datum/species/demihuman, /datum/species/dwarf/mountain, /datum/species/dracon, /datum/species/tabaxi)
 	show_wanderer_examine = FALSE
 
 /datum/outfit/job/roguetown/gronn/warrior/pre_equip(mob/living/carbon/human/H)
@@ -182,7 +182,7 @@
 	greet_text = "You are the bulk of the tribe. Skilled with bow and axe. Well adapted to surviving off the land."
 	outfit = /datum/outfit/job/roguetown/gronn/tribal
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp)
+	allowed_races = list(/datum/species/human/northern, /datum/species/halforc, /datum/species/goblinp, /datum/species/tieberian, /datum/species/lizardfolk, /datum/species/lupian, /datum/species/anthromorph, /datum/species/demihuman, /datum/species/dwarf/mountain, /datum/species/dracon, /datum/species/tabaxi)
 	show_wanderer_examine = FALSE
 
 /datum/outfit/job/roguetown/gronn/tribal/pre_equip(mob/living/carbon/human/H)
