@@ -47,6 +47,10 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_XENOPHOBIC, TRAIT_GENERIC)
 
+	if(!H.has_language(/datum/language/celestial))
+		H.grant_language(/datum/language/celestial)
+		to_chat(H, span_info("I can speak Sama'glos with ,c before my speech."))
+
 /datum/migrant_role/slaver/slavemercsword
 	name = "Zybantynian Blade Mercenary"
 	greet_text = "A hired arm for the Zybantine Slave troop. You have come from the deserts of Zybantine and are hired under contract by the Zybantynian Master."
@@ -100,6 +104,10 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_XENOPHOBIC, TRAIT_GENERIC)
 
+	if(!H.has_language(/datum/language/celestial))
+		H.grant_language(/datum/language/celestial)
+		to_chat(H, span_info("I can speak Sama'glos with ,c before my speech."))
+
 /datum/migrant_role/slaver/slavemercwhip
 	name = "Zybantynian Whip Mercenary"
 	greet_text = "A hired arm for the Zybantine Slave troop. You have come from the deserts of Zybantine and are hired under contract by the Zybantynian Master."
@@ -152,6 +160,10 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_XENOPHOBIC, TRAIT_GENERIC)
 
+	if(!H.has_language(/datum/language/celestial))
+		H.grant_language(/datum/language/celestial)
+		to_chat(H, span_info("I can speak Sama'glos with ,c before my speech."))
+
 /datum/migrant_role/slaver/slavemercbow
 	name = "Zybantynian Light Crossbow Mercenary"
 	greet_text = "A hired arm for the Zybantine Slave troop, also trained in first aid. You have come from the deserts of Zybantine and are hired under contract by the Zybantynian Master."
@@ -202,6 +214,10 @@
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_XENOPHOBIC, TRAIT_GENERIC)
+
+	if(!H.has_language(/datum/language/celestial))
+		H.grant_language(/datum/language/celestial)
+		to_chat(H, span_info("I can speak Sama'glos with ,c before my speech."))
 
 /datum/migrant_role/slaver/slavez
 	name = "Slave"
