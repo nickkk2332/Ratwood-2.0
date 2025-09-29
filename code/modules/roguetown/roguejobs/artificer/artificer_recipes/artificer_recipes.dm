@@ -96,12 +96,14 @@
 
 /datum/artificer_recipe/bronze/locks
 	name = "Locks 3x"
+	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/customlock, /obj/item/customlock, /obj/item/customlock)
 	hammers_per_item = 5
 	skill_level = 1
 
 /datum/artificer_recipe/bronze/keys
 	name = "Keys 3x"
+	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/customblank, /obj/item/customblank, /obj/item/customblank)
 	hammers_per_item = 5
 	skill_level = 1
