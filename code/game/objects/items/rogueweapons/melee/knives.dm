@@ -730,9 +730,6 @@
 								user.visible_message(span_notice("[user] finishes styling [H]'s hair."), span_notice("You finish styling [H == user ? "your" : "[H]'s"] hair."))
 				
 				if("facial hairstyle")
-					if(H.gender != MALE)
-						to_chat(user, span_warning("They don't have facial hair to style!"))
-						return
 					var/datum/customizer_choice/bodypart_feature/hair/facial/humanoid/facial_choice = CUSTOMIZER_CHOICE(/datum/customizer_choice/bodypart_feature/hair/facial/humanoid)
 					var/list/valid_facial_hairstyles = list()
 					for(var/facial_type in facial_choice.sprite_accessories)
@@ -823,9 +820,6 @@
 								user.visible_message(span_notice("[user] finishes styling [H]'s hair."), span_notice("You finish styling [H == user ? "your" : "[H]'s"] hair."))
 				
 				if("facial hairstyle")
-					if(H.gender != MALE)
-						to_chat(user, span_warning("They don't have facial hair to style!"))
-						return
 					var/datum/customizer_choice/bodypart_feature/hair/facial/humanoid/facial_choice = CUSTOMIZER_CHOICE(/datum/customizer_choice/bodypart_feature/hair/facial/humanoid)
 					var/list/valid_facial_hairstyles = list()
 					for(var/facial_type in facial_choice.sprite_accessories)
