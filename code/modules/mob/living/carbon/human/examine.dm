@@ -863,7 +863,7 @@
 
 
 	var/list/lines
-	if((get_face_name() != real_name) && !observer_privilege)
+	if(get_visible_name() in unknown_names)
 		lines = build_cool_description_unknown(get_mob_descriptors_unknown(obscure_name, user), src)
 	else
 		lines = build_cool_description(get_mob_descriptors(obscure_name, user), src)
