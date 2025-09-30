@@ -52,14 +52,16 @@
 		"Unknown Man",
 		"Unknown Woman",
 	)
-	if(get_visible_name() in unknown_names)
+	if(get_face_name() != real_name)
 		obscure_name = TRUE
 
 	if(observer_privilege)
 		obscure_name = FALSE
 
-	if(obscure_name)
-		. = list(span_info("ø ------------ ø\nThis is <EM>Unknown</EM>."))
+	if(name in unknown_names)
+		. = list(span_info("ø ------------ ø\nThis is <EM>[name]</EM>."))
+	else if(obscure_name)
+		. = list(span_info("ø ------------ ø\nThis is an unknown <EM>[name]</EM>."))
 	else
 		on_examine_face(user)
 		var/used_name = name
@@ -70,10 +72,6 @@
 		var/is_returning = FALSE
 		if(observer_privilege)
 			used_name = real_name
-		if(migrant_type)
-			var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
-			if(migrant.show_wanderer_examine)
-				display_as_wanderer = TRUE
 		else if(job)
 			var/datum/job/J = SSjob.GetJob(job)
 			if(!J || J.wanderer_examine)
@@ -82,6 +80,9 @@
 				is_returning = TRUE
 			if(display_as_wanderer)
 				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
+			if(migrant_type)
+				used_title = MIGRANT_ROLE(migrant_type)
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name] [used_title]."))
 			else if(used_title)
 				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
 		else
@@ -862,7 +863,7 @@
 
 
 	var/list/lines
-	if(get_visible_name() in unknown_names)
+	if((get_face_name() != real_name) && !observer_privilege)
 		lines = build_cool_description_unknown(get_mob_descriptors_unknown(obscure_name, user), src)
 	else
 		lines = build_cool_description(get_mob_descriptors(obscure_name, user), src)
