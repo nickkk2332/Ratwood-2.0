@@ -162,7 +162,7 @@
 	var/weaponroll = rand(1, 100)	//LETS GO GAMBLING!!
 	switch(weaponroll)
 		if(1 to 20)
-			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
+			r_hand = /obj/item/rogueweapon/eaglebeak
 		if(21 to 40)
 			r_hand = /obj/item/rogueweapon/mace/goden/steel
 		if(41 to 60)
