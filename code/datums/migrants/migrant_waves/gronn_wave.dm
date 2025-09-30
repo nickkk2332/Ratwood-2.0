@@ -21,7 +21,7 @@
 	roles = list(
 		/datum/migrant_role/gronn/chieftain = 1,
 		/datum/migrant_role/gronn/shaman = 1,
-		/datum/migrant_role/gronn/warrior = 1,
+		/datum/migrant_role/gronn/warrior = 2,
 		/datum/migrant_role/gronn/tribal = 2,
 		/datum/migrant_role/gronn/slave = 1
 	)
