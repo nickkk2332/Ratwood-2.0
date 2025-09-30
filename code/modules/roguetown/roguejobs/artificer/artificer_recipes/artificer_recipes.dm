@@ -115,7 +115,7 @@
 /datum/artificer_recipe/iron/lockpicks
 	name = "Lockpick (x3)"
 	required_item = /obj/item/ingot/iron
-	created_item = list(/obj/item/lockpickring,/obj/item/lockpickring,/obj/item/lockpickring)
+	created_item = list(/obj/item/lockpick,/obj/item/lockpick,/obj/item/lockpick)
 	hammers_per_item = 5
 	skill_level = 2
 
