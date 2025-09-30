@@ -43370,8 +43370,8 @@
 	keylock = 1;
 	lockid = "nightmaiden"
 	},
-/obj/item/restraints/legcuffs/beartrap/armed,
-/obj/item/restraints/legcuffs/beartrap/armed,
+/obj/item/restraints/legcuffs/beartrap,
+/obj/item/restraints/legcuffs/beartrap,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town/rockhill)
 "oWJ" = (
@@ -49410,8 +49410,8 @@
 /obj/item/clothing/suit/roguetown/armor/plate/half,
 /obj/item/clothing/shoes/roguetown/boots/armor/iron,
 /obj/item/clothing/shoes/roguetown/boots/armor/iron,
-/obj/item/clothing/suit/roguetown/armor/gambeson/lord,
-/obj/item/clothing/suit/roguetown/armor/gambeson/lord,
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy,
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan,
 /turf/open/floor/rogue/tile/bath{
 	icon_state = "bathtileratwood"
 	},
