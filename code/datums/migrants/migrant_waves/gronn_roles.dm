@@ -16,6 +16,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
 	gloves = /obj/item/clothing/gloves/roguetown/angle
+	neck = /obj/item/clothing/neck/roguetown/gorget		//You're the big honcho, may as well
 	belt = /obj/item/storage/belt/rogue/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/kurche
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
@@ -75,7 +76,9 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	pants = /obj/item/clothing/under/roguetown/trou/nomadpants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
+	neck = /obj/item/clothing/neck/roguetown/leather	//leather gorget just in case. Ur Da Second Big Honcho.
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron	//U Gon Punch Good.
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron	//for parrying while unarmed
 	belt = /obj/item/storage/belt/rogue/leather
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 	backl = /obj/item/storage/backpack/rogue/satchel
@@ -102,7 +105,7 @@
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)	//this guy can SNAP HIS FINGERS and LIGHT A FIRE???
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose)
 
