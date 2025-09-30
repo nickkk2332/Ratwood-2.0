@@ -72,6 +72,9 @@
 		var/is_returning = FALSE
 		if(observer_privilege)
 			used_name = real_name
+		if(migrant_type)
+			used_title = MIGRANT_ROLE(migrant_type)
+			. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name] [used_title]."))
 		else if(job)
 			var/datum/job/J = SSjob.GetJob(job)
 			if(!J || J.wanderer_examine)
@@ -80,9 +83,6 @@
 				is_returning = TRUE
 			if(display_as_wanderer)
 				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
-			if(migrant_type)
-				used_title = MIGRANT_ROLE(migrant_type)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name] [used_title]."))
 			else if(used_title)
 				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
 		else
