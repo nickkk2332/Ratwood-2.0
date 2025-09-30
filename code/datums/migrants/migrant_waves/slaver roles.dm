@@ -33,7 +33,7 @@
 		H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
@@ -64,7 +64,7 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/sallet
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/purple
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	neck = /obj/item/clothing/neck/roguetown/chaincoif		//no need for two pouches of coin, get SOME neck armor
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/angle
@@ -91,7 +91,7 @@
 		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.change_stat("strength", 2)
@@ -120,7 +120,7 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/sallet
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/purple
-	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+	neck = /obj/item/clothing/neck/roguetown/chaincoif		//ditto as blade mercs: some neck armor. No need for so much coin
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/angle
@@ -147,7 +147,7 @@
 		H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.change_stat("strength", 2)
@@ -191,10 +191,9 @@
 	if(H.mind)
 		H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/combat/crossbows, 5, TRUE)	//its just draw time. Every other role w/a focus on crossbows gets this. They lose weapon variety in order to be dedicated crossbow and knive users
 		H.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-		H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
