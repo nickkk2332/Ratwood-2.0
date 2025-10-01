@@ -17,7 +17,7 @@
 
 /datum/supply_pack/rogue/luxury/shhig
 	name = "Shhig brand zigs (pack of 6)"
-	cost = 40
+	cost = 50
 	contains = list(/obj/item/storage/fancy/shhig)
 
 /datum/supply_pack/rogue/luxury/ozium
