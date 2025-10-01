@@ -52,7 +52,7 @@
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/rogueweapon/stoneaxe/hurlbat = 1
 		)
 	H.merctype = 1
@@ -87,7 +87,7 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
-	H.dna.species.soundpack_m = new /datum/voicepack/mal I e/warrior()
+	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 
 	head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	gloves = /obj/item/clothing/gloves/roguetown/plate/atgervi
