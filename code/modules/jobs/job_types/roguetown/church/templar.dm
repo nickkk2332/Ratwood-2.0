@@ -220,8 +220,6 @@
 		STATKEY_WIL = 3,
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
-		STATKEY_INT = 2,
-		STATKEY_PER = 2,
 	)
 
 /datum/outfit/job/roguetown/templar/crusader/pre_equip(mob/living/carbon/human/H)
