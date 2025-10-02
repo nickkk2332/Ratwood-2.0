@@ -128,6 +128,7 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	if(prob(10))
 		l_hand = /obj/item/rogueweapon/huntingknife/idagger
 		l_hand = /obj/item/rogueweapon/huntingknife/idagger
+	H.eye_color = "27becc"
 	H.hair_color = "61310f"
 	H.facial_hair_color = H.hair_color
 	if(H.gender == FEMALE)
