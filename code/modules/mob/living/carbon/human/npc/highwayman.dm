@@ -84,25 +84,29 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	if(prob(50))
 		mask = /obj/item/clothing/mask/rogue/ragmask/red
 	if(prob(50))
-		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	if(prob(50))
-		armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
+		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
 	if(prob(50))
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	if(prob(50))
-		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-	if(prob(50))
+		pants = /obj/item/clothing/under/roguetown/tights/random
+	if(prob(30))
 		head = /obj/item/clothing/head/roguetown/helmet/leather
 	if(prob(30))
 		head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	if(prob(50))
+	if(prob(70))
 		neck = /obj/item/clothing/neck/roguetown/coif
-	gloves = /obj/item/clothing/gloves/roguetown/leather
+	if(prob(70))
+		gloves = /obj/item/clothing/gloves/roguetown/leather
 	if(prob(50))
-		gloves = /obj/item/clothing/gloves/roguetown/angle
+		gloves = /obj/item/clothing/gloves/roguetown/fingerless
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	if(prob(25))
+		cloak = /obj/item/clothing/cloak/raincloak/brown
 	H.STASTR = rand(12,14) //GENDER EQUALITY!!
 	H.STASPD = 11
 	H.STACON = rand(10,12) //so their limbs no longer pop off like a skeleton
@@ -121,10 +125,9 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 		l_hand = /obj/item/rogueweapon/shield/wood
 	if(prob(10))
 		l_hand = /obj/item/rogueweapon/shield/buckler/palloy
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	if(prob(30))
-		neck = /obj/item/clothing/neck/roguetown/leather
-	H.eye_color = "27becc"
+	if(prob(10))
+		l_hand = /obj/item/rogueweapon/huntingknife/idagger
+		l_hand = /obj/item/rogueweapon/huntingknife/idagger
 	H.hair_color = "61310f"
 	H.facial_hair_color = H.hair_color
 	if(H.gender == FEMALE)
@@ -136,6 +139,7 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE) // Trash mobs, untrained.
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
