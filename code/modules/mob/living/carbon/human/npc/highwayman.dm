@@ -120,9 +120,9 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	if(prob(10))
 		r_hand = /obj/item/rogueweapon/sword/falchion/militia
 	if(prob(10))
-		/obj/item/rogueweapon/sword/short/messer/iron
+		r_hand = /obj/item/rogueweapon/sword/short/messer/iron
 	if(prob(10))
-		/obj/item/rogueweapon/stoneaxe/handaxe
+		r_hand = /obj/item/rogueweapon/stoneaxe/handaxe
 	if(prob(20))
 		r_hand = /obj/item/rogueweapon/pick/militia
 	if(prob(25))	
